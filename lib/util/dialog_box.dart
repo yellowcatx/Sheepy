@@ -1,10 +1,6 @@
-// ignore_for_file: prefer_typing_uninitialized_variables
-
 import 'package:flutter/material.dart';
-import 'package:sheep/util/my_button.dart';
 
-// ignore: must_be_immutable
-class DialogBox extends StatelessWidget {
+class DialogBox extends StatefulWidget {
   final controller;
   VoidCallback onSave;
   VoidCallback onCancel;
@@ -15,6 +11,11 @@ class DialogBox extends StatelessWidget {
       required this.onSave,
       required this.onCancel});
 
+  @override
+  State<DialogBox> createState() => _DialogBoxState();
+}
+
+class _DialogBoxState extends State<DialogBox> {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
@@ -37,7 +38,7 @@ class DialogBox extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 TextField(
-                  controller: controller,
+                  controller: widget.controller,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.black),
@@ -53,33 +54,35 @@ class DialogBox extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     ElevatedButton(
-                      onPressed: onSave,
+                      onPressed: widget.onSave,
                       child: Text(
                         'Salvar',
                         style: TextStyle(
-                            color: Colors.white, fontFamily: 'SpaceMono'),
+                            color: Colors.white,
+                            fontFamily: 'SpaceMono',
+                            fontSize: 13),
                       ),
                       style: ElevatedButton.styleFrom(
-                          fixedSize: Size(100, 43),
+                          fixedSize: Size(100, 40),
                           backgroundColor: Color.fromRGBO(126, 149, 113, 20),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20))),
                     ),
                     const SizedBox(
                       width: 20,
-                      height: 65, //126, 149, 113
+                      height: 69, //126, 149, 113
                     ),
                     ElevatedButton(
                       child: Text(
                         'Cancelar',
                         style: TextStyle(
-                            fontSize: 13,
+                            fontSize: 12,
                             color: Colors.white,
                             fontFamily: 'SpaceMono'),
                       ),
-                      onPressed: onCancel,
+                      onPressed: widget.onCancel,
                       style: ElevatedButton.styleFrom(
-                          fixedSize: Size(100, 43),
+                          fixedSize: Size(110, 40),
                           backgroundColor: Color.fromRGBO(126, 149, 113, 20),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20))),
