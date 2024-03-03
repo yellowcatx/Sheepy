@@ -1,17 +1,34 @@
-# sheepy
+# 🐑 Sheep - A Cute To-Do App
 
-A new Flutter project.
+This project is a Flutter application for managing to-do lists.
 
-## Getting Started
+## 🚀 Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with the Sheep project, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+1. **Install Flutter**: If you haven't already, follow the instructions in the [official documentation](https://flutter.dev/docs/get-started/install) to install Flutter.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. **Clone the repository**: Clone this repository to your local environment using the following command:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. **Install dependencies**: In the project directory, run the following command to install the necessary dependencies:
+
+4. **Run the app**: Use the command below to run the app on your device or emulator:
+
+## ✨ Features
+
+This To-Do app has the following functionalities:
+
+- ✅ Add new tasks.
+- ✔️ Mark tasks as completed.
+- ❌ Delete tasks.
+- 📅 View calendar to select task dates.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
+
+## 📚 Additional Documentation
+
+For more information about Flutter development, check out the [online documentation](https://flutter.dev/docs), which includes tutorials, samples, guidance on mobile development, and a full API reference.
+
 # kokoo
