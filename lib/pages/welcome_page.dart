@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:page_transition/page_transition.dart';
 import 'package:sheep/pages/home_page.dart';
 
@@ -12,29 +11,28 @@ class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 255, 255, 235),
+      backgroundColor: Theme.of(context).colorScheme.background,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            'assets/sheep2.png',
-            height: 100,
-            width: 200,
+            'assets/3.png',
+            width: 250,
           ),
           Column(
             children: [
               Center(
                 child: SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
               ),
             ],
           ),
           ElevatedButton(
               style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromRGBO(126, 149, 113, 20),
+                  backgroundColor: Color.fromRGBO(184, 207, 170, 0.984),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15)),
+                      borderRadius: BorderRadius.circular(12)),
                   padding: EdgeInsets.symmetric(horizontal: 20, vertical: 18)),
               onPressed: () {
                 ;
@@ -52,8 +50,8 @@ class _WelcomePageState extends State<WelcomePage> {
                 ;
               },
               child: Text(
-                'Login',
-                style: TextStyle(fontFamily: 'SpaceMono'),
+                'Entrar',
+                style: TextStyle(fontFamily: 'SpaceMono', color: Colors.white),
               )),
           SizedBox(
             height: 20,
@@ -64,7 +62,7 @@ class _WelcomePageState extends State<WelcomePage> {
               'Developed by yellowcat',
               style: TextStyle(
                 fontFamily: 'SpaceMono',
-                color: Colors.grey,
+                color: Color.fromARGB(255, 165, 157, 157),
               ),
             ),
           )

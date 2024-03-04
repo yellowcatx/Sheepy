@@ -20,18 +20,18 @@ class ToDoTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 30.0, right: 20.0, top: 30),
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
-          color: Color.fromRGBO(126, 149, 113, 20),
-          borderRadius: BorderRadius.circular(12),
+          color: Theme.of(context).colorScheme.secondary,
+          borderRadius: BorderRadius.circular(17),
         ),
         child: Row(
           children: [
             Checkbox(
               value: taskCompleted,
               onChanged: onChanged,
-              activeColor: const Color.fromARGB(255, 239, 239, 239),
-              checkColor: Colors.grey,
+              activeColor: Color.fromARGB(255, 0, 0, 0),
+              checkColor: const Color.fromARGB(255, 255, 255, 255),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(4),
               ),
@@ -42,7 +42,6 @@ class ToDoTile extends StatelessWidget {
                 taskName,
                 style: TextStyle(
                   fontFamily: 'SpaceMono',
-                  color: Colors.white,
                   decoration: taskCompleted
                       ? TextDecoration.lineThrough
                       : TextDecoration.none,
@@ -54,7 +53,7 @@ class ToDoTile extends StatelessWidget {
                 deleteFunction!(context);
               },
               icon: Icon(IconlyBroken.delete),
-              color: Colors.white,
+              color: Theme.of(context).colorScheme.primary,
               iconSize: 22,
             ),
           ],

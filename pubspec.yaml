@@ -15,12 +15,14 @@ dependencies:
   hive: ^2.2.3
   cupertino_icons: ^1.0.2
   lottie: ^2.7.0
-  google_fonts: ^6.2.0
+  google_fonts: ^6.2.1
   google_nav_bar: ^5.0.6
   iconly: ^1.0.1
   flutter_iconly: ^1.0.2
   flutter_floating_bottom_bar: ^1.2.0
   cr_calendar: ^1.2.1
+  flutter_svg: ^2.0.10+1
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
@@ -47,6 +49,14 @@ flutter:
   - assets/sheep2.png
   - assets/sheepy.png
   - assets/cat.png
+  - assets/3.png
+  - assets/4.png
+  - assets/form.png
+  - assets/ovelha1.png
+  - assets/ovelha2.png
+  - assets/ovelha3.png
+  - assets/ovelha4.png
+  
   fonts:
     - family: SpaceMono
       fonts:

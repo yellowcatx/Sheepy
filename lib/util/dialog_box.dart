@@ -29,11 +29,11 @@ class _DialogBoxState extends State<DialogBox> {
           style: TextStyle(
               color: Colors.grey, fontFamily: 'SpaceMono', fontSize: 14),
         ),
-        backgroundColor: const Color.fromARGB(255, 255, 252, 225),
+        backgroundColor: Theme.of(context).colorScheme.primary,
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
         content: Container(
-          height: 125,
+          height: 150,
           child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -41,10 +41,11 @@ class _DialogBoxState extends State<DialogBox> {
                   controller: widget.controller,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.black),
+                          borderSide: BorderSide(color: Colors.grey),
                           borderRadius: BorderRadius.circular(15)),
                       focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(color: Colors.green),
+                          borderSide: BorderSide(
+                              color: Color.fromARGB(120, 113, 160, 115)),
                           borderRadius: BorderRadius.circular(15)),
                       hintText: 'New Task...'),
                   textAlign: TextAlign.center,
@@ -64,7 +65,7 @@ class _DialogBoxState extends State<DialogBox> {
                       ),
                       style: ElevatedButton.styleFrom(
                           fixedSize: Size(100, 40),
-                          backgroundColor: Color.fromRGBO(126, 149, 113, 20),
+                          backgroundColor: Color.fromRGBO(164, 190, 148, 1),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20))),
                     ),
@@ -83,7 +84,7 @@ class _DialogBoxState extends State<DialogBox> {
                       onPressed: widget.onCancel,
                       style: ElevatedButton.styleFrom(
                           fixedSize: Size(110, 40),
-                          backgroundColor: Color.fromRGBO(126, 149, 113, 20),
+                          backgroundColor: Color.fromRGBO(164, 190, 148, 1),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20))),
                     ),
