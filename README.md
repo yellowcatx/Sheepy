@@ -1,4 +1,4 @@
-# 🐑 Sheep - A Cute To-Do App
+# 🐑 Sheepy - A Cute To-Do App
 
 This project is a Flutter application for managing to-do lists.
 
